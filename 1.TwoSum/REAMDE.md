@@ -1,4 +1,4 @@
-### Description ###
+### [Description](https://leetcode.com/problems/two-sum/description/
 
 Give an array of integers,return indices of the two numbers such that they add up to a specical target.
 
