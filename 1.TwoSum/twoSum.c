@@ -2,10 +2,6 @@
 #include<stdlib.h>
 int* twoSum(int* num,int numSize,int target);
 
-
-
-
-
 //function twoSum
 
 //Solution #1 (Brute Force)
