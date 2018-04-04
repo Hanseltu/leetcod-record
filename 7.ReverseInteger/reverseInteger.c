@@ -7,7 +7,8 @@ int reverse(int);
 
 //function
 //Call the codes NICE!
-int reverse(int x){
+int reverse(int x)
+{
     long long val = 0;
     do{
         val = val * 10 + x % 10;
@@ -17,7 +18,8 @@ int reverse(int x){
     return (val > INT_MAX || val < INT_MIN) ? 0 : val;
 }
 
-int main(){
+int main()
+{
     int temp;
     printf("Please input an integer under 32-bit \n");
     scanf("%d",&temp);
