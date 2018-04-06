@@ -8,6 +8,7 @@ int* twoSum(int* num,int numSize,int target);
 int* twoSum(int* num,int numSize,int target)
 {
     int* ret = (int*)malloc(sizeof(int)*2);
+    //int ret[2];
     for (int i = 0;i<numSize;i++)
         for(int j = i+1;j<numSize;j++)
             if(*(num+j) == target - *(num+i))
