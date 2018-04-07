@@ -4,10 +4,10 @@
 
 ### More information to the records see in every Directory.
 
-#### [1.TwoSum](https://github.com/Hanseltu/leetcode-record/tree/master/1.TwoSum)
+#### [1.TwoSum](https://github.com/Hanseltu/leetcode-records/tree/master/1.TwoSum)
 
-#### [7.ReverseInteger](https://github.com/Hanseltu/leetcode-record/tree/master/7.ReverseInteger)
+#### [7.ReverseInteger](https://github.com/Hanseltu/leetcode-records/tree/master/7.ReverseInteger)
 
-#### [9.PalindromeNumber](https://github.com/Hanseltu/leetcode-record/tree/master/9.PalindromeNumber)
+#### [9.PalindromeNumber](https://github.com/Hanseltu/leetcode-records/tree/master/9.PalindromeNumber)
 
-#### [13.RomanToInteger](https://github.com/Hanseltu/leetcode-record/tree/master/13.RomanToInteger)
+#### [13.RomanToInteger](https://github.com/Hanseltu/leetcode-records/tree/master/13.RomanToInteger)
