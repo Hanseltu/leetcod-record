@@ -40,11 +40,11 @@ char* longestCommonPrefix(char** strs,int strsSize){
 }
 
 int main(){
-    const char str[4] = {"abc","abd","abs"};
-    char* a = longestCommonPrefix(str,strlen(str));
-    for (int i = 0;i < strlen(a); i++)
+     char *str[4] = {"abc","abd","abs","ab"};
+    char* temp = longestCommonPrefix(str,strlen(*str));
+    for (int i = 0;i < strlen(temp); i++)
     {
-        printf("%s",a[i]);
+        printf("%c \n",temp[i]);
     }
     return 0;
 }
