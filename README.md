@@ -11,3 +11,6 @@
 #### [9.PalindromeNumber](https://github.com/Hanseltu/leetcode-records/tree/master/9.PalindromeNumber)
 
 #### [13.RomanToInteger](https://github.com/Hanseltu/leetcode-records/tree/master/13.RomanToInteger)
+
+#### [14.LongestCommonPrefix](https://github.com/Hanseltu/leetcode-records/tree/master/14.LongestCommonPrefix)
+
