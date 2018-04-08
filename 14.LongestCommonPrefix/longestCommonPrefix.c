@@ -6,7 +6,7 @@ char* longestCommonPrefix(char** strs,int strsSize){
     int index;
     if (strsSize < 1)
     {
-        return 0;
+        return (" ");
     }
     index = strlen(strs[0]);
     char* a;
