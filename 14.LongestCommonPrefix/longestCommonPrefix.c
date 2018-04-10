@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-char* longestCommonPrefix(char** strs,int strsSize){
+    char* longestCommonPrefix(char** strs,int strsSize){
     int i = 0,j = 0,tempindex = 0;
     int index;
     if (strsSize < 1)
     {
-        return (" ");
+        return "";
     }
     index = strlen(strs[0]);
     char* a;
@@ -23,13 +23,13 @@ char* longestCommonPrefix(char** strs,int strsSize){
             }
             else
             {
-                a[j] = '\0';
+                a[j] = '\0'; /* cut down the string a  */
                 break;
             }
         }
         if (tempindex == 0)
         {
-            return (" ");
+            return "";
         }
         if (tempindex < index)
         {
