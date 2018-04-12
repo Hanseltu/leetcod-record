@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
+#include<stdbool.h>
 bool isValid(char *s){
     int len = strlen(s);
     if (len%2 != 0)
@@ -10,7 +10,7 @@ bool isValid(char *s){
     }
 
     int limit = len / 2;
-    char *stack = malloc(limit);
+    char *stack =(char*) malloc(limit);
     int idx = 0;
     char cur,peek;
     for (int i = 0;i < len; i++)
@@ -43,4 +43,9 @@ bool isValid(char *s){
         }
     }
     return idx == 0;
+}
+
+int main(){
+    char s[] = "{}){}";
+    printf("%d \n",isValid(s));
 }
