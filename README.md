@@ -14,3 +14,5 @@
 
 #### [14.LongestCommonPrefix](https://github.com/Hanseltu/leetcode-records/tree/master/14.LongestCommonPrefix)
 
+#### [20.ValidParentheses](https://github.com/Hanseltu/leetcode-records/tree/master/20.ValidParentheses)
+
