@@ -10,7 +10,7 @@ bool isValid(char *s){
     }
 
     int limit = len / 2;
-    char *stack =(char*) malloc(limit);
+    char *stack = malloc(limit);
     int idx = 0;
     char cur,peek;
     for (int i = 0;i < len; i++)
@@ -46,6 +46,6 @@ bool isValid(char *s){
 }
 
 int main(){
-    char s[] = "{}){}";
+    char s[] = "{}{}";
     printf("%d \n",isValid(s));
 }
