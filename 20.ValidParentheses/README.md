@@ -1,4 +1,4 @@
-### [Description](https://leetcode.com/problems/valid-parenthehes/description/)
+### [Description](https://leetcode.com/problems/valid-parentheses/description/)
 
 Give a string containing just the characters '(',')','{','}','[' and ']',determine if the input string is valid.
 
