@@ -16,7 +16,7 @@ bool isValid(char *s){
     for (int i = 0;i < len; i++)
     {
         cur = s[i];
-        if (cur == 'c' || cur == '[' || cur == '{')
+        if (cur == '(' || cur == '[' || cur == '{')
         {
             if (idx == limit)
             {
@@ -46,6 +46,6 @@ bool isValid(char *s){
 }
 
 int main(){
-    char s[] = "{}{}";
+    char s[] = "{}[](){}";
     printf("%d \n",isValid(s));
 }
