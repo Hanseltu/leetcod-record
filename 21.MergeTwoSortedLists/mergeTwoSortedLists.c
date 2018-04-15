@@ -7,15 +7,16 @@ struct ListNode{
     struct ListNode* next;
 };
 
-struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
+struct ListNode* mergeTwoLists1(struct ListNode* l1, struct ListNode* l2) {
   struct ListNode* p1 = l1;
   struct ListNode* p2 = l2;
   struct ListNode* temp = NULL;
 
-  if(p1->val < p2->val) //如果第一个数l1串要小，则在l1串中插入
+  if(p1->val <= p2->val) //如果第一个数l1串要小，则在l1串中插入
   {
-    while(p2->next != NULL)
+    while(p2->next != NULL )
     {
+        p2 = p2->next;
     while ((p1->next->val < p2->val) && (p1->next->next != NULL)) //找到比b串小的位置
     {
       p1 = p1->next;
@@ -24,7 +25,6 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
       temp = p2;
       temp->next = p1->next;
       p1->next = temp;
-      p2 = p2->next;
     }
     return l1;
   }
@@ -72,7 +72,7 @@ int main()
     hnode1->val = 0;
     hnode1->next = NULL;
     p = hnode1;
-    struct ListNode *l1 = hnode1;
+    //struct ListNode *l1 = hnode1->next;
 
     for (int i = 0;i <(int)strlen(c1);i++)
     {
@@ -90,7 +90,7 @@ int main()
     hnode2->val = 0;
     hnode2->next = NULL;
     q = hnode2;
-    struct ListNode *l2 = hnode2;
+    //struct ListNode *l2 = hnode2->next;
 
     for (int j = 0;j <(int)sizeof(c2);j++)
     {
@@ -105,20 +105,26 @@ int main()
     }
 
     //print linklist
-    while(hnode1->next){
-        printf("%d \n",hnode1->next->val);
-        hnode1->next = hnode1->next->next;
+    struct ListNode* p1 = hnode1->next;
+    while(p1){
+        printf("%d \n",p1->val);
+        p1  = p1->next;
     }
 
     printf("-----------------------------\n");
 
-    while(hnode2->next)
+    struct ListNode* p2 = hnode2->next;
+    while(p2)
     {
-        printf("%d \n",hnode2->next->val);
-        hnode2->next = hnode2->next->next;
+        printf("%d \n",p2->val);
+        p2 = p2->next;
     }
-    struct ListNode* a = mergeTwoLists(l1->next,l2->next);
+    //struct ListNode* a = mergeTwoLists(l1->next,l2->next);
+    struct ListNode *l1 = hnode1->next;
+    struct ListNode *l2 = hnode2->next;
+    struct ListNode* a = mergeTwoLists1(l1,l2);
 
+    printf("-----------After Merge--------\n");
     while (a)
     {
         printf("%d \n",a->val);
