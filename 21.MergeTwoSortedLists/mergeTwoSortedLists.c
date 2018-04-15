@@ -7,7 +7,7 @@ struct ListNode{
     struct ListNode* next;
 };
 
-struct ListNode* mergeTwoLists1(struct ListNode* l1, struct ListNode* l2) {
+struct ListNode* mergeTwoLists1(struct ListNode* l1, struct ListNode* l2) { //有问题
   struct ListNode* p1 = l1;
   struct ListNode* p2 = l2;
   struct ListNode* temp = NULL;
@@ -50,10 +50,13 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
         return l2;
     if (l2 == NULL)
         return l1;
-    if (l1->val <= l2->val) {
+    if (l1->val <= l2->val)
+    {
         l1->next = mergeTwoLists(l1->next, l2);
         return l1;
-    } else {
+    }
+    else
+    {
         l2->next = mergeTwoLists(l1, l2->next);
         return l2;
     }
@@ -122,8 +125,9 @@ int main()
     //struct ListNode* a = mergeTwoLists(l1->next,l2->next);
     struct ListNode *l1 = hnode1->next;
     struct ListNode *l2 = hnode2->next;
-    struct ListNode* a = mergeTwoLists1(l1,l2);
+    struct ListNode* a = mergeTwoLists(l1,l2);
 
+    //struct ListNode* a = mergeTwoLists1(l1,l2);
     printf("-----------After Merge--------\n");
     while (a)
     {
