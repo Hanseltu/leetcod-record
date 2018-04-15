@@ -16,3 +16,4 @@
 
 #### [20.ValidParentheses](https://github.com/Hanseltu/leetcode-records/tree/master/20.ValidParentheses)
 
+#### [21.MergeTwoSortedLists](https://github.com/Hanseltu/leetcode-records/tree/master/21.MergeTwoSortedLists)
