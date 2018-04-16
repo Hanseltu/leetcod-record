@@ -8,11 +8,11 @@
     int index;
     if (strsSize < 1)
     {
-        return "";
+        return 0;
     }
     index = strlen(strs[0]);
     char* a;
-    a = malloc(sizeof(char)*(index+1));
+    a =(char*) malloc(sizeof(char)*(index+1));
     strcpy(a,strs[0]);
     for (i = 1;i < strsSize;i++)
     {
@@ -31,7 +31,7 @@
         }
         if (tempindex == 0)
         {
-            return "";
+            return 0;
         }
         if (tempindex < index)
         {
@@ -42,9 +42,9 @@
 }
 
 int main(){
-     char *str[4] = {"abc","abd","abs","ab"};
+    char* str[] = {"abc","abd","abs","ab"};
     char* temp = longestCommonPrefix(str,strlen(*str));
-    for (int i = 0;i < strlen(temp); i++)
+    for (int i = 0;i <(int)strlen(temp); i++)
     {
         printf("%c \n",temp[i]);
     }
