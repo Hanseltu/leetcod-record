@@ -7,9 +7,12 @@ int removeElement(int* nums, int numsSize, int val) {
     if(nums[i] != val)
     {
       nums[j++] = nums[i];
-      //numsSize--;
     }
-   
   }
-  return (numsSize>0?j+1:j);
+  return j;
+}
+
+int main(){
+    int a[] = {3,2,2,3};
+    printf("%d \n",removeElement(a,4,3));
 }
