@@ -20,5 +20,4 @@
 
 #### [26.RemoveDuplicatesFromSortedArray](https://github.com/Hanseltu/leetcode-records/tree/master/26.RemoveDuplicatesFromSortedArray)
 
-
 #### [27.RemoveElement](https://github.com/Hanseltu/leetcode-records/tree/master/27.RemoveElement)
