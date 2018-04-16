@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 //超出时间限制
 int removeDuplicates1(int* nums, int numsSize) {
     for(int i=1;i<numsSize;){
@@ -23,12 +23,15 @@ int removeDuplicates1(int* nums, int numsSize) {
 int removeDuplicates(int* nums, int numsSize) {
     int i, j;
     for (i = 1, j = 0; i < numsSize; i++)
-        if (nums[i] != nums[i-1]) { nums[++j] = nums[i]; }
+        if (nums[i] != nums[i-1])
+        {
+            nums[++j] = nums[i];
+        }
     return (numsSize > 0 ? j+1 : j);
 }
 
 int main(){
-    int a[] = {0,0,0,0};
-    printf ("%d \n",removeDuplicates1(a,sizeof(a)));
+    int a[] = {0,0,0,1,2,3};
+    printf ("%d \n",removeDuplicates(a,6));
     return 0;
 }
