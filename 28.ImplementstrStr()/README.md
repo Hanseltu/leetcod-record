@@ -3,6 +3,12 @@
 Return the index of the first occurrence of needle in haystack,or **-1**if needle is not part of haystack.
 
 
+
+
+
+
+### Solution(C)
+```c
 int strStr(char* haystack, char* needle) {
   int n = strlen(haystack);
   int m = strlen(needle);
@@ -29,3 +35,7 @@ int strStr(char* haystack, char* needle) {
     return -1;
   return 0;
 }
+```
+
+### 思路
+
