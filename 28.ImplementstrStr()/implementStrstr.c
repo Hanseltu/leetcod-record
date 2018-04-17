@@ -28,8 +28,8 @@ int strStr(const char* haystack,const char* needle) {
   return 0;
 }
 int main(){
-    const char *T = "helloh";
-    const char *P = "llo";
+    const char *T = "";
+    const char *P = "";
     printf("%d \n",strStr(T,P));
     return 0;
 }
