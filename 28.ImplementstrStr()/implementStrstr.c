@@ -1,7 +1,7 @@
-#include<stdioh>
+#include<stdio.h>
+#include<string.h>
 
-
-int strStr(char* haystack, char* needle) {
+int strStr(const char* haystack,const char* needle) {
   int n = strlen(haystack);
   int m = strlen(needle);
   int s = 0,i = 0;
@@ -26,4 +26,10 @@ int strStr(char* haystack, char* needle) {
   if (n < m)
     return -1;
   return 0;
+}
+int main(){
+    const char *T = "helloh";
+    const char *P = "llo";
+    printf("%d \n",strStr(T,P));
+    return 0;
 }
