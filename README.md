@@ -1,8 +1,17 @@
 # RECORD OF LEETCODE #
 
-### The order of the solution to problems is from easy to difficult.
+## Leetcode算法部分刷题笔记,先用C语言刷**Easy**部分，再用Python刷**Easy**部分，依次迭代。
 
-### More information to the records see in every Directory.
+## 开始阶段每道题不保证是最优解，仅作参考,后续会分析最优解。
+
+## 刷题顺序
+
+* Easy  [ing]
+
+* Medium  [Not yet]
+
+* Hard    [Not yet]
+
 
 #### [1.TwoSum](https://github.com/Hanseltu/leetcode-records/tree/master/1.TwoSum)
 
