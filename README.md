@@ -32,3 +32,5 @@
 #### [27.RemoveElement](https://github.com/Hanseltu/leetcode-records/tree/master/27.RemoveElement)
 
 #### [28.ImplementstrStr()](https://github.com/Hanseltu/leetcode-records/tree/master/28.ImplementstrStr())
+
+#### [35.SearchInsertPosition](https://github.com/Hanseltu/leetcode-records/tree/master/35.SearchInsertPosition)
