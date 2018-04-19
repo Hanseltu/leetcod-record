@@ -20,7 +20,7 @@ The count-and-say sequence is the sequence of intergers with the first five term
 
 `21` is read off as **"one 2,the one 1"** or `1211`.
 
-Given an interger n,genenrate the $$n^th$$ term of the count-and-say sequence.
+Given an interger n,genenrate the $n^th$ term of the count-and-say sequence.
 
 Note:Each term of the sequence of intergers will be represented as a string.
 
