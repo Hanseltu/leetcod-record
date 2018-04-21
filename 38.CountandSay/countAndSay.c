@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
+//不是很懂
 char* countAndSay(int n) {
     static char buf1[10240];
     static char buf2[10240];
@@ -32,6 +33,7 @@ char* countAndSay(int n) {
     }
     return cur;
 }
+
 
 int main(){
     const char* temp = countAndSay(5);
