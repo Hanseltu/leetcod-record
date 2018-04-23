@@ -1,4 +1,4 @@
-# RECORD OF LEETCODE #
+## RECORD OF LEETCODE #
 
 ### Leetcode算法部分刷题笔记,先用C语言刷**Easy**部分，再用Python刷**Easy**部分，依次迭代。
 
