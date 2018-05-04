@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+
+//若说明了最大和一定是正数，则可用此算法
 //不用分治O(n)
 int maxSubArray(int* nums, int numsSize) {
     int max=nums[0];
