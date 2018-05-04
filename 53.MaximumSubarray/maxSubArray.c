@@ -1,5 +1,22 @@
 #include<stdio.h>
 
+//不用分治O(n)
+int maxSubArray(int* nums, int numsSize) {
+    int max=nums[0];
+    int sum=0;
+    for(int i=0;i<numsSize;i++)
+    {
+        sum+=nums[i];
+        if(sum>max)
+            max=sum;
+        if(sum<0)
+            sum=0;
+    }
+    return max;
+}
+
+
+
 //O(n^3)
 int maxSubArray1(int arrays[],int length){
     int i,j,k,thisSum=0,maxSum=0;
