@@ -82,8 +82,8 @@ int maxSubArray3(int arrays[], int left, int right) {
     return sum;
 }
 int main(){
-    int a[] = {-2,1};
-    printf("%d \n",maxSubArray2(a,sizeof(a)/sizeof(int)));
+    int a[] = {-2,-1,-3};
+    printf("%d \n",maxSubArray(a,sizeof(a)/sizeof(int)));
     return 0;
 }
 
