@@ -1,13 +1,19 @@
 #include<stdio.h>
-
+#include<string.h>
 int lengthOfLastWord(char* s) {
-  int len = sizeof(s);
-  int count;
+  int len = strlen(s);
+  int count = 0;
   for (int i = len; i > 0; i--)
   {
-    if (s[i-1] = ' ')
+    if (s[i-1] == ' ')
       break;
-    count ++;
+    count++;
   }
   return count;
+}
+int main()
+{
+    char a[] = "a ";
+    printf("%d \n",lengthOfLastWord(a));
+    return 0;
 }
