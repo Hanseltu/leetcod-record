@@ -35,3 +35,5 @@
 #### [35.SearchInsertPosition](https://github.com/Hanseltu/leetcode-records/tree/master/35.SearchInsertPosition)
 
 #### [53.MaximumSubarray](https://github.com/Hanseltu/leetcode-records/tree/master/53.MaximumSubarray)
+
+#### [58.lengthOfLastWord](https://github.com/Hanseltu/leetcode-records/tree/master/58.lengthOfLastWord)
