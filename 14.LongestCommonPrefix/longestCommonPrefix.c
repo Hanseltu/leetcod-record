@@ -2,8 +2,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-
-    char* longestCommonPrefix(char** strs,int strsSize){
+char* longestCommonPrefix(char** strs,int strsSize){
     int i = 0,j = 0,tempindex = 0;
     int index;
     if (strsSize < 1)
