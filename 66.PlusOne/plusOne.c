@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib.h>
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int carry = 1, i = 0, sum = 0;
     *returnSize = digitsSize;
@@ -23,5 +23,11 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
 }
 
 int main() {
+    int a[4] = {1,2,3,4};
+    int size = sizeof(a)/sizeof(int);
+    int *p = plusOne(a,4, &size);
+    for (int i=0; i<size; i++)
+        printf("%d\t",p[i]);
+    printf("\n");
     return 0;
 }
